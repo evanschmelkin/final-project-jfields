@@ -8,6 +8,8 @@ ruby "3.3.7"
 # For encrypting passwords
 gem "bcrypt", "3.1.18"
 
+
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
