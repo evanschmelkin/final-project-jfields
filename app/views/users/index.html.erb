@@ -17,7 +17,7 @@
             <div class="fw-bold"><a href="<%= user_url(user) %>"><%= user.name %></a></div>
             <%= user.email %>
           </div>
-          <span class="badge text-bg-primary rounded-pill"><%= pluralize(user.microposts.count, "MicroPost", plural:"MicroPosts") %></span>
+          <span class="badge text-bg-primary rounded-pill"><%= pluralize(user.todos.count, "ToDo", plural:"ToDos") %></span>
         </li>
       <% end %>
       
