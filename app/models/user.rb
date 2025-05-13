@@ -3,6 +3,8 @@ class User < ApplicationRecord
 	attr_accessor :remember_token
 	has_many :likes, dependent: :destroy
 	has_many :microposts, dependent: :destroy	# if a user is deleted, also delete their microposts
+	has_many :categories, dependent: :destroy #this is for categories
+	has_many :todos, dependent: :destroy #this is for the todos
 	
 	before_save { self.email = email.downcase }
 	validates :name, presence: true, length: { maximum: 50 }
