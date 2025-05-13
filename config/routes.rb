@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  get "/todos/completed", to: "todos#completed", as: "completed_todos"
   resources :categories
   resources :todos
-  get "/todos/completed", to: "todos#completed", as: "completed_todos"
 
   
   root "home#index"

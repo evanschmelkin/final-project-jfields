@@ -32,14 +32,14 @@
             </li>
             <% if logged_in? %>
           <li class="nav-item">
-              <a class="nav-link" href="<%= todos_url %>"><i class="bi bi-info-circle"></i> ToDos</a>
+              <a class="nav-link" href="<%= todos_url %>"><i class="bi bi-list-stars"></i> ToDos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<%= completed_todos_path %>"><i class="bi bi-info-circle"></i> Completed</a>
+              <a class="nav-link" href="<%= completed_todos_path %>"><i class="bi bi-calendar-check-fill"></i> Completed</a>
             </li>
               <%end %>
             <li class="nav-item">
-              <a class="nav-link" href="<%= home_contactus_url %>"><i class="bi bi-person-rolodex"></i> Contact Us</a>
+              <a class="nav-link" href="<%= categories_url %>"><i class="bi bi-tags-fill"></i> Categories</a>
             </li>
           </ul>
 

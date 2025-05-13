@@ -7,8 +7,10 @@ class TodosController < ApplicationController
   end
 
   def completed
-    @todos = current_user.todos.where(completed: true)
+    #please shoot me
+    @todos = current_user.todos
   end
+
 
   # GET /todos/1 or /todos/1.json
   def show
