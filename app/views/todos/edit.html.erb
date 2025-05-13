@@ -1,0 +1,16 @@
+<!-- Wesley, Evan, and Jarred -->
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Edit Todo" %>
+
+<h1>Edit Todo</h1>
+
+<div class="card">
+  <div class="card-header"><i class="bi bi-pencil-square"></i> Edit ToDo</div>
+  <div class="card-body">
+    <div class="card-group" id="microposts">
+      <%= render "form", todo: @todo %>
+    </div>
+
+  </div>
+</div>

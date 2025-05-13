@@ -1,0 +1,17 @@
+<% content_for :title, "New todo" %>
+
+
+<div class="card">
+  <div class="card-header"><i class="bi bi-pencil-square"></i> New ToDo</div>
+  <div class="card-body">
+    <div class="card-group" id="microposts">
+      <%= render "form", todo: @todo %>
+    </div>
+
+  </div>
+</div>
+
+
+<div>
+  <%= link_to "Back to todo", todos_path, class: "btn btn-danger" %>
+</div>
