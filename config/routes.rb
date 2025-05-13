@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :categories
   resources :todos
-  
+  get "/todos/completed", to: "todos#completed", as: "completed_todos"
+
   
   root "home#index"
 
@@ -9,6 +10,7 @@ Rails.application.routes.draw do
   get "home/about"
   get "home/contactus"
   get "home/help"
+
 
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
