@@ -3,7 +3,11 @@ class TodosController < ApplicationController
 
   # GET /todos or /todos.json
   def index
-    @todos = Todo.all
+    @todos = current_user.todos
+  end
+
+  def completed
+    @todos = current_user.todos.where(completed: true)
   end
 
   # GET /todos/1 or /todos/1.json

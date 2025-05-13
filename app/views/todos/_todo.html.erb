@@ -14,14 +14,15 @@
     <%= todo.completed %>
   </p>
 
+  <!-- commented out by evan because we shouldn't show user id/username
   <p>
     <strong>User:</strong>
     <%= todo.user_id %>
   </p>
-
+-->
   <p>
     <strong>Category:</strong>
-    <%= todo.category_id %>
+    <%= todo.category.name %> <!-- Shows the name instead of the ID -->
   </p>
 
 </div>

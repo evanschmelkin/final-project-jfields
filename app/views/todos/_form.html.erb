@@ -25,18 +25,23 @@
     <%= form.label :completed, style: "display: block" %>
     <%= form.check_box :completed %>
   </div>
-
+<!--
+This part is commented out because
+we dont want the user to be able to select different users, it's assigned to the logged in
+user already
   <div>
     <%= form.label :user_id, style: "display: block" %>
     <%= form.text_field :user_id %>
   </div>
-
+ -->
   <div>
     <%= form.label :category_id, style: "display: block" %>
     <%= form.text_field :category_id %>
   </div>
 
+
+
   <div>
-    <%= form.submit %>
+    <button type="submit" class="btn btn-primary">Create ToDo</button>
   </div>
 <% end %>
