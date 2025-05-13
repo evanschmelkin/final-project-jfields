@@ -11,3 +11,4 @@ Everything should run as expected
 Rails version used was 3.3.7
 I personally used RubyMine
 and rails s to run it
+Make sure you are using the right rails version
