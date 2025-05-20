@@ -317,6 +317,7 @@ DEPENDENCIES
   brakeman
   capybara
   debug
+  execjs
   importmap-rails
   jbuilder
   jquery-rails
