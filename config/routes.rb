@@ -15,15 +15,9 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
-  
-  resources :microposts do
-    member do
-      get :like
-    end
-  end
+
 
   resources :users
 
-  #get 'microposts/:id/like' => 'microposts#like', as: :likeAPost
-  
+
 end
