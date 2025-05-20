@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     @user_count = User.count
-    @post_count = Micropost.count
+    @post_count = Todo.count
   end
 
   def about
