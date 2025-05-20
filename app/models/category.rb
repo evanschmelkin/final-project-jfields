@@ -4,4 +4,5 @@ class Category < ApplicationRecord
 
   validates :name, presence: true #fix from 5/20
   validates :description, presence: true #fix from 5/20
+
 end
