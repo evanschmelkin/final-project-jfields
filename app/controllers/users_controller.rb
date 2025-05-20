@@ -8,7 +8,8 @@ class UsersController < ApplicationController
 
   # GET /users/1 or /users/1.json
   def show
-    @microposts = Micropost.where(user_id:@user.id)
+    #@microposts = Micropost.where(user_id:@user.id)
+    # commented out 5/20
   end
 
   # GET /users/new
