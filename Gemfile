@@ -6,7 +6,7 @@ gem "rails", "~> 7.2.2", ">= 7.2.2.1"
 ruby "3.3.7"
 
 # For encrypting passwords
-gem "bcrypt", "3.1.18"
+gem "bcrypt", "3.1.20"
 
 gem 'execjs'
 
